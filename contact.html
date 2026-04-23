@@ -1,53 +1,82 @@
 <!DOCTYPE html>
-<html lang="en"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=3.0"> 
-    <title>Contact Us</title> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Éclat Naturel Diamonds</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
-        <p>Reach out to us for any inquiries at anytime</p>
+        <center>
+        <h1>ÉCLAT NATUREL DIAMONDS</h1>
+        </center>
         <nav>
+            <center>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="gallery.html">Samples</a>
-            <a href="shop.html">Prices</a>
-            <a href="review.html"> Feedback</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="shop.html">Shop</a>
+            <a href="review.html">Reviews</a>
             <a href="contact.html">Contact</a>
+            </center>
         </nav>
-        <hr>
-        
-        <h2>Send a message about anything</h2>
-
-        <form>
-            <label>Names in Full:</label><br>
-            <input type="text"
-    name="name"><br><br>
-
-           <label>Email:</label><br>
-           <textarea name="message"
-    rows="10" cols="15"></textarea><br><br>
-
-           <input type="submit" value="Send text">
-        </form>
-
-       <hr>
-
-       
-        <h2>Contact Us On</h2>
-        <p>Email:bida25-304@thuto.bac.ac.bw</p>
-
-        
-         <p>Phone:
-            <a href="tel:+267 72289284">+267 72 289 284</a>
-         </p>
-         <hr>
     </header>
 
+    <main class="container">
+        <section class="hero fade-in">
+            <h1 class="section-title">Begin Your Journey</h1>
+            <p>Ready to discover your perfect piece? Connect with our experts for a personalized consultation</p>
+        </section>
+
+        <section class="contact-grid fade-in">
+            <div class="product">
+                <h3>📧 Email Consultation</h3>
+                <p>bida25-304@thuto.bac.ac.bw</p>
+                <p>Response within 24 hours</p>
+            </div>
+
+            <div class="product">
+                <h3>📞 Phone Appointment</h3>
+                <p><a href="tel:+26772289284">+267 72 289 284</a></p>
+                <p>Mon-Fri 9AM-6PM</p>
+            </div>
+
+            <div class="product">
+                <h3>💎 Private Viewing</h3>
+                <p>Schedule in-person viewing</p>
+                <p>By appointment only</p>
+            </div>
+        </section>
+
+        <section class="contact-form fade-in">
+            <h2 class="section-title">Send Us a Message</h2>
+            <form>
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Your Message *</label>
+                <textarea id="message" name="message" rows="6" placeholder="Tell us about your vision..."></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="cta">
+            <h2 class="section-title">Your Dream Piece Awaits</h2>
+            <p>Every conversation starts with understanding your story. Let's create something extraordinary together.</p>
+            <a href="gallery.html" class="btm">Browse Collection First</a>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2026 Éclat Naturel Diamonds</p>
+        <p>&copy; 2026 Éclat Naturel Diamonds | Serving Discerning Clients Worldwide</p>
     </footer>
 </body>
 </html>
