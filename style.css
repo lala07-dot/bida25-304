@@ -1,0 +1,452 @@
+:root {
+  --font-size: 16px;
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --border: rgba(0, 0, 0, 0.1);
+  --gold: #D4AF37;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #4a5568;
+}
+
+/* Luxury styling for links */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--gold);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Gold accent line (used throughout the site) */
+.gold-line {
+  width: 4rem;
+  height: 1px;
+  background-color: var(--gold);
+  margin: 0 auto;
+}
+
+/* Button styling */
+button {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem 2rem;
+  border: 2px solid var(--gold);
+  background: transparent;
+  color: var(--foreground);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.05em;
+}
+
+button:hover {
+  background: var(--gold);
+  color: white;
+}
+
+/* Input styling */
+input, textarea {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  background: #f8f8f8;
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Header */
+header {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+}
+
+nav {
+  padding: 1rem 0;
+}
+
+nav a {
+  margin: 0 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Main content */
+main {
+  min-height: 80vh;
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Section titles */
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 4rem;
+  height: 2px;
+  background: var(--gold);
+  margin: 1rem auto 0;
+}
+
+/* Products/Featured */
+.products,
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product,
+.gallery-item {
+  text-align: center;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.product:hover,
+.gallery-item:hover {
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+  transform: translateY(-5px);
+}
+
+.product img,
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reviews */
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  border-left: 4px solid var(--gold);
+}
+
+.starts,
+.stars {
+  color: var(--gold);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.author {
+  font-style: italic;
+  color: #666;
+  margin-top: 1rem;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.stats div {
+  padding: 2rem;
+}
+
+.stats h2 {
+  font-size: 2.5rem;
+  color: var(--gold);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f8f7f5 0%, #fff 100%);
+}
+
+.btm {
+  display: inline-block;
+  background: var(--gold);
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 50px;
+  font-weight: 600;
+  margin-top: 1rem;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+/* Form */
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f8f8f8;
+  border-radius: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* Premium backgrounds */
+body {
+  background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('pics for web/diamond1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.hero {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(26, 26, 26, 0.05) 100%);
+  padding: 6rem 2rem;
+  border-radius: 20px;
+  margin: 2rem 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-images {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.hero-img {
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(212, 175, 55, 0.3);
+  transition: transform 0.5s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.product a, .gallery-item a {
+  display: block;
+  margin-top: 1rem;
+  color: var(--gold);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.product a:hover, .gallery-item a:hover {
+  color: var(--gold-light);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+.fade-in {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.sparkle {
+  animation: sparkle 2s infinite;
+}
+
+.product,
+.gallery-item,
+.card {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Enhanced typography */
+h1, h2, h3 {
+  background: linear-gradient(45deg, var(--gold), #f1c40f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-title {
+  font-size: 2.5rem;
+}
+
+/* Richer colors */
+:root {
+  --gold-light: #f1c40f;
+  --gold-dark: #b8860b;
+  --primary-gradient: linear-gradient(135deg, var(--gold), var(--gold-light));
+  --shadow-gold: rgba(212, 175, 55, 0.3);
+}
+
+button {
+  background: var(--primary-gradient);
+  border: none;
+  box-shadow: 0 8px 25px var(--shadow-gold);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px var(--shadow-gold);
+}
+
+/* Premium product cards */
+.product, .gallery-item {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.product::before,
+.gallery-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--primary-gradient);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s;
+  border-radius: 8px;
+}
+
+.product:hover::before,
+.gallery-item:hover::before {
+  opacity: 0.1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  .stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  body {
+    background-attachment: scroll;
+  }
+}
