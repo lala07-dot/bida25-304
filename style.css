@@ -57,7 +57,7 @@ p {
   color: #4a5568;
 }
 
-/* Luxury styling for links */
+
 a {
   color: inherit;
   text-decoration: none;
@@ -68,14 +68,14 @@ a:hover {
   color: var(--gold);
 }
 
-/* Container */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-/* Gold accent line (used throughout the site) */
+
 .gold-line {
   width: 4rem;
   height: 1px;
@@ -83,7 +83,7 @@ a:hover {
   margin: 0 auto;
 }
 
-/* Button styling */
+
 button {
   font-size: 1rem;
   font-weight: 500;
@@ -101,7 +101,7 @@ button:hover {
   color: white;
 }
 
-/* Input styling */
+
 input, textarea {
   font-size: 1rem;
   font-weight: 300;
@@ -116,7 +116,7 @@ input:focus, textarea:focus {
   outline-offset: 2px;
 }
 
-/* Header */
+
 header {
   padding: 2rem 0;
   text-align: center;
@@ -136,7 +136,7 @@ nav a {
   font-size: 1.1rem;
 }
 
-/* Main content */
+
 main {
   min-height: 80vh;
   padding: 4rem 0;
@@ -148,7 +148,7 @@ main {
   padding: 0 2rem;
 }
 
-/* Section titles */
+
 .section-title {
   text-align: center;
   margin-bottom: 3rem;
@@ -164,7 +164,7 @@ main {
   margin: 1rem auto 0;
 }
 
-/* Products/Featured */
+
 .products,
 .gallery-grid {
   display: grid;
@@ -197,13 +197,13 @@ main {
   margin-bottom: 1rem;
 }
 
-/* Responsive images */
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Reviews */
+
 .reviews {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -232,7 +232,7 @@ img {
   margin-top: 1rem;
 }
 
-/* Stats */
+
 .stats {
   display: flex;
   justify-content: center;
@@ -250,7 +250,7 @@ img {
   color: var(--gold);
 }
 
-/* CTA */
+
 .cta {
   text-align: center;
   padding: 4rem 0;
@@ -268,7 +268,7 @@ img {
   box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
 }
 
-/* Form */
+
 form {
   max-width: 600px;
   margin: 2rem auto;
@@ -283,7 +283,7 @@ label {
   font-weight: 500;
 }
 
-/* Premium backgrounds */
+
 body {
   background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('pics for web/diamond1.jpg');
   background-size: cover;
@@ -345,7 +345,7 @@ body {
   color: var(--gold-light);
 }
 
-/* Animations */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -376,7 +376,7 @@ body {
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
-/* Enhanced typography */
+
 h1, h2, h3 {
   background: linear-gradient(45deg, var(--gold), #f1c40f);
   -webkit-background-clip: text;
@@ -388,7 +388,7 @@ h1, h2, h3 {
   font-size: 2.5rem;
 }
 
-/* Richer colors */
+
 :root {
   --gold-light: #f1c40f;
   --gold-dark: #b8860b;
@@ -407,7 +407,7 @@ button:hover {
   box-shadow: 0 15px 35px var(--shadow-gold);
 }
 
-/* Premium product cards */
+
 .product, .gallery-item {
   background: rgba(255,255,255,0.95);
   backdrop-filter: blur(10px);
@@ -434,7 +434,7 @@ button:hover {
   opacity: 0.1;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   nav a {
     display: block;
